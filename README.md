@@ -21,7 +21,7 @@ Para o passo a passo de execução (Docker, geração dos mapas, AMCL, cálculo 
 | Desvio padrão do erro de posição (m) | 0,3151 | 0,1991 |
 | Erro de posição (min / max) (m) | 5,0145 / 6,7098 | 4,8152 / 5,9816 |
 
-![Erro de posição e orientação ao longo da trajetória](slamlocalizacao/resultados/erro_ao_longo_do_tempo.png)
+![Erro de posição e orientação ao longo da trajetória](lar_gazebo/resultados/erro_ao_longo_do_tempo.png)
 
 *O gráfico acima mostra o erro instantâneo (AMCL vs. ground truth) amostra a amostra. Note que o erro de posição (gráfico superior) oscila dentro de uma faixa estreita (~5 a ~6,7 m) sem tendência de crescimento ao longo do tempo — é justamente esse comportamento "deslocado, mas estável" que indica um offset de calibração, e não divergência do filtro de partículas (detalhes na seção Limitações). O erro de orientação (gráfico inferior) tem picos pontuais durante as curvas do robô, mas retorna a valores baixos nos trechos de movimento reto, o que é esperado e normal.*
 
